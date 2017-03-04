@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: timtest02
+  host: timtest02
+  disk_quota: 1024M
+  services:
+  - timtest02-cloudantNoSQLDB
+  - timtest02-iotf-service
+  - availability-monitoring-auto
